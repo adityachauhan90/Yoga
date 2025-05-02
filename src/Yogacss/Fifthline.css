@@ -1,0 +1,120 @@
+/* Fifthline Section */
+.fifthline {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.fifthline-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  gap: 40px;
+}
+
+.fifthline-image,
+.fifthline-text {
+  flex: 1 1 48%;
+}
+
+/* Image Styling */
+.fifthline-image img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Text Styling */
+.fifthline-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fifthline-text h5 {
+  font-size: 14px;
+  color: #3dbca8;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+.fifthline-text h1 {
+  font-size: 32px;
+  margin-bottom: 16px;
+  color: #227179;
+}
+
+.fifthline-text p {
+  font-size: 16px;
+  color: black;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+/* Button Styles */
+.fifthline-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.btn-primary {
+  background-color: #3dbca8;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #2bae98;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn-outline {
+  padding: 10px 20px;
+  border: 2px solid green;
+  background-color: transparent;
+  color: green;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background-color: darkgreen;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .fifthline-container {
+    flex-direction: column;
+  }
+
+  .fifthline-image,
+  .fifthline-text {
+    flex: 1 1 100%;
+  }
+
+  .fifthline-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-primary,
+  .btn-outline {
+    width: 100%;
+    text-align: center;
+  }
+}

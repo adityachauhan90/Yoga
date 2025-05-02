@@ -1,0 +1,106 @@
+.thirdline-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2EC4O9HSmMZDnxQ59BRKR2ZgPAno1rMEtYA&s') no-repeat center center;
+    background-size: cover;
+    flex-wrap: wrap;
+    position: relative;
+    color: white;
+  }
+  
+  /* Dark overlay for text readability */
+  .thirdline-container::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+  }
+  
+  .text-section,
+  .image-section {
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Text section */
+  .text-section {
+    max-width: 50%;
+  }
+  
+  .text-section h1,
+  .text-section p {
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+  }
+  
+  .text-section h1 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .text-section p {
+    font-size: 1rem;
+    color: #f0f0f0;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  /* CTA button */
+  .browse-button {
+    padding: 10px 20px;
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .browse-button:hover {
+    background-color: #ff7f00;
+  }
+  
+  /* Image section */
+  .image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .icon-container img,
+  .arrow-container img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .thirdline-container {
+      flex-direction: column;
+      text-align: center;
+      padding: 40px 15px;
+    }
+  
+    .text-section {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .image-section {
+      flex-direction: row;
+      justify-content: center;
+      gap: 15px;
+    }
+  
+    .icon-container img,
+    .arrow-container img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  

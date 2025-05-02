@@ -1,0 +1,66 @@
+.secondline-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 40px 20px;
+    background-image: linear-gradient(to right, #f0f4f3, #d9f1e3); /* Correctly applying the gradient */
+  }
+  
+  .feature-card {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    gap: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .feature-card img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    flex-shrink: 0;
+  }
+  
+  .feature-text {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .feature-text h2 {
+    font-size: 1.3rem;
+    color: #333;
+    margin: 0;
+  }
+  
+  .feature-text p {
+    font-size: 0.95rem;
+    color: #666;
+    margin-top: 6px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .feature-card {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .feature-card img {
+      margin-bottom: 10px;
+    }
+  
+    .feature-text {
+      align-items: center;
+    }
+  }
+  

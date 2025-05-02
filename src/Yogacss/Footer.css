@@ -1,0 +1,124 @@
+/* Responsive styling */
+@media (max-width: 992px) {
+  .footer {
+    flex-direction: column;
+    padding: 40px 40px;
+    gap: 40px;
+  }
+
+  .footer > div {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .footer h3,
+  .footer p,
+  .footer li,
+  .contact-item h5,
+  .contact-item h6 {
+    text-align: left;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer {
+    padding: 30px 20px;
+  }
+
+  .footer h3 {
+    font-size: 20px;
+  }
+
+  .footer p,
+  .footer li,
+  .contact-item h5,
+  .contact-item h6 {
+    font-size: 16px;
+  }
+
+  .contact-item i {
+    font-size: 18px;
+  }
+
+  .footer-text img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 100px;
+  background-color: #222;
+  color: #fff;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer > div {
+  flex: 1;
+  min-width: 220px;
+  max-width: 25%;
+  padding: 0 25px;
+}
+
+/* First div image styling */
+.footer-text img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.footer-text h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #ffcc00;
+}
+
+.footer-text p {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.footer h3 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: #ffcc00;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer li {
+  margin-bottom: 12px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.footer li:hover {
+  color: #ffcc00;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.contact-item i {
+  margin-right: 12px;
+  color: #ffcc00;
+  font-size: 20px;
+}
+
+.contact-item h5,
+.contact-item h6 {
+  margin: 0;
+  font-size: 17px;
+}
