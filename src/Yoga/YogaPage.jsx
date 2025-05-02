@@ -11,6 +11,7 @@ import Footer from "../Components/Footer";
 import '../Yogacss/Testimonials.css';
 import TestimonialsData from '../Yogacss/Testimonials.json'
 import YogaCategories from "../Components/YogaCategories";
+import Logoline from "../Components/Logoline";
 
 
 function YogaPage() {
@@ -23,6 +24,7 @@ function YogaPage() {
       <Forthline />
       <Fifthline />
       <Sixthline/>
+      <Logoline/>
       <YogaCategories/>
       <section className="testimonial-section">
         <div className="testimonial-container">

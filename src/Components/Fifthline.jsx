@@ -16,7 +16,7 @@ function Fifthline() {
         {/* Right text section */}
         <div className="fifthline-text">
           <h5>Our foundation is</h5>
-          <h3>Modern Yoga</h3>
+          <h3>Modern Yoga</h3   >
           <p>
             Modern postural yoga consists largely but not exclusively of the practice of asanas.
             There were very few standing asanas before 1900. By 2012, there were at least 19

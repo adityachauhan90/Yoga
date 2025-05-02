@@ -7,10 +7,7 @@ function Firstline() {
       <div className="text-section">
         <h1>Online</h1>
         <h2>Yoga Classes</h2>
-        <p>
-          Yoga is the most popular online class, trusted <br />by 100,000+ customers.
-          Our instructors are well- <br />known and certified.
-        </p>
+        <h6>Yoga is the most popular online yoga classes, trusted <br /> by 100,000+ customers. Our instructors are well- <br />known and certified.</h6>
         <button className="browse-button">Browse Course</button>
       </div>
       <div className="image-section">
